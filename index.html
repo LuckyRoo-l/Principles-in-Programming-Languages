@@ -156,7 +156,7 @@ const sh=a=>{for(let k=a.length-1;k>0;k--){const j=Math.random()*(k+1)|0;[a[k],a
 let list,i,score,streak,best,log,lock,t0,tm;
 const fmt=s=>(s/60|0)+":"+String(s%60).padStart(2,"0");
 const show=h=>{app.innerHTML=h};
-function home(){clearInterval(tm);show(`<div class="card"><h1>PPL Mock Exam</h1><p>${Q.length} questions across ${Object.keys(T).length} topics: design, syntax, binding, types, expressions, errors, subprograms, calling sequences, parameters, templates, metaprogramming and memory. Answers are checked instantly. Use keys 1–4 to answer and Enter for next.</p>
+function home(){clearInterval(tm);show(`<div class="card"><h1>PPL Mock Exam</h1><p>${Q.length} questions across ${Object.keys(T).length} topics: design, syntax, binding, types, expressions, errors, subprograms, calling sequences, parameters, templates, metaprogramming and memory. Answers are checked instantly.pwidi 1-4 dto ttpwtddt.</p>
 <div class="row"><button class="btn" onclick="start(Q)">Start exam</button></div></div>`)}
 function start(src){list=sh(src.slice()).map(q=>({t:q[0],q:q[1],c:q[2],o:sh(q.slice(2))}));i=score=streak=best=0;log=[];t0=Date.now();clearInterval(tm);tm=setInterval(()=>{const e=$("#tm");if(e)e.textContent=fmt((Date.now()-t0)/1000|0)},1000);ask()}
 function ask(){lock=false;const q=list[i];
